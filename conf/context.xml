@@ -21,6 +21,8 @@
     <!-- Default set of monitored resources -->
     <WatchedResource>WEB-INF/web.xml</WatchedResource>
 
+    <Transaction factory="bitronix.tm.BitronixUserTransactionObjectFactory" />
+
     <!-- Uncomment this to disable session persistence across Tomcat restarts -->
     <!--
     <Manager pathname="" />
@@ -30,6 +32,5 @@
          on session expiration as well as webapp lifecycle) -->
     <!--
     <Valve className="org.apache.catalina.valves.CometConnectionManagerValve" />
-    -->
 
 </Context>
